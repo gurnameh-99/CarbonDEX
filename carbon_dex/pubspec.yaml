@@ -73,6 +73,9 @@ flutter:
     - family: Sacramento
       fonts:
         - asset: fonts/Sacramento-Regular.ttf
+    - family: Sifonn
+      fonts:
+        - asset: fonts/SIFONN_PRO.otf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
