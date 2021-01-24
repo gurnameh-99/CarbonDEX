@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:crypto_font_icons/crypto_font_icons.dart';
-import 'package:typicons_flutter/typicons.dart';
 import 'slider_widget.dart';
 
 int value = 6;
@@ -111,14 +109,5 @@ class FormScreen extends StatelessWidget {
     );
   }
 
-  Widget changeIcon() {
-    return Align(
-        alignment: Alignment.topRight,
-        child: Icon(
-          Typicons.arrow_sorted_up,
-          color: Colors.green,
-          size: 30,
-        ));
-  }
 
 }
