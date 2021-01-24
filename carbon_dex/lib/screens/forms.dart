@@ -61,8 +61,11 @@ class FormScreen extends StatelessWidget {
                                     )
                                   ],
                                 ),
+                                SizedBox(   //Use of SizedBox
+                                  height: 30,
+                                ),
                                 Row(
-                                  children: <Widget> [SliderWidget()],//[cryptoAmount()],
+                                  children: <Widget> [SliderWidget()],
                                 )
                               ],
                             ))
@@ -83,8 +86,8 @@ class FormScreen extends StatelessWidget {
           alignment: Alignment.centerRight,
           child: Icon(
             CupertinoIcons.flame_fill,
-            color: Colors.amber,
-            size: 40,
+            color: Colors.blueAccent,
+            size: 80,
           )),
     );
   }
