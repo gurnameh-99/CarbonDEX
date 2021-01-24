@@ -1,17 +1,23 @@
 import 'package:flutter/material.dart';
 import 'custom_slider_thumb_circle.dart';
+import 'form_data.dart';
+
+var formData = FormData.getData;
 
 class SliderWidget extends StatefulWidget {
   final double sliderHeight;
   final int min;
   final int max;
   final fullWidth;
+  var val;
 
   SliderWidget(
       {this.sliderHeight = 48,
         this.max = 15,
         this.min = 2,
-        this.fullWidth = false});
+        this.fullWidth = false,
+      });
+
 
   @override
   _SliderWidgetState createState() => _SliderWidgetState();
@@ -22,9 +28,13 @@ class _SliderWidgetState extends State<SliderWidget> {
 
   @override
   Widget build(BuildContext context) {
+
+
     double paddingFactor = .2;
 
     if (this.widget.fullWidth) paddingFactor = .3;
+
+
 
     return Container(
       width: this.widget.fullWidth
@@ -86,8 +96,10 @@ class _SliderWidgetState extends State<SliderWidget> {
                       onChanged: (value) {
                         setState(() {
                           _value = value;
+                          this.widget.val = _value;
                         });
                       }),
+
                 ),
               ),
             ),
@@ -103,9 +115,22 @@ class _SliderWidgetState extends State<SliderWidget> {
                 color: Colors.white,
               ),
             ),
+            submitRatingButton,
           ],
         ),
       ),
+    );
+
+  }
+  void updateRating() {
+    setState(() => this.widget.val = ((this.widget.min)+(this.widget.max-this.widget.min)*_value).round());
+    print(this.widget.val);
+  }
+  Widget get submitRatingButton {
+    return RaisedButton(
+      onPressed: updateRating,
+      child: Text('Submit'),
+      color: Colors.indigoAccent,
     );
   }
 }

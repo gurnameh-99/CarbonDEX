@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'slider_widget.dart';
+import 'package:carbon_dex/screens/slider_widget.dart';
 
 import 'form_data.dart';
 
 class FormScreen extends StatelessWidget {
   var formData = FormData.getData;
+  var wid = new SliderWidget();
+  //var val = wid.val;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,6 +32,10 @@ class FormScreen extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
+        Container(
+        child: Text(
+          "${wid.val}",)
+        ),
             Expanded(
               child: ListView.builder(
 // scrollDirection: Axis.horizontal,
@@ -35,7 +43,7 @@ class FormScreen extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Container(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-                      height: 150,
+                      height: 200,
                       width: double.maxFinite,
                       child: Card(
                         elevation: 5,
@@ -73,15 +81,17 @@ class FormScreen extends StatelessWidget {
                                             ),
                                             Row(
                                               children: <Widget>[
-                                                SliderWidget()
+                                                wid,
                                               ],
-                                            )
+                                            ),
+
                                           ],
                                         ))
                                   ],
                                 ),
                               )
                             ]),
+
                           ),
                         ),
                       ),
@@ -219,5 +229,6 @@ class FormScreen extends StatelessWidget {
       ),
     );
   }
+
 
 }
