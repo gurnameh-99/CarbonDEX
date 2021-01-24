@@ -7,7 +7,7 @@ import './screens/maps.dart';
 
 var routes = <String, WidgetBuilder>{
   "/": (BuildContext context) => SplashScreen(),
-  "/home": (BuildContext context) => IntroScreen(),
+  "/home": (BuildContext context) => Home(),
   "/form": (BuildContext context) => FormScreen(),
   "/simpleform": (BuildContext context) => FormScreen1(),
   "/map": (BuildContext context) => Loading(),
