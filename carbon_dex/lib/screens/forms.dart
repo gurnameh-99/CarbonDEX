@@ -194,6 +194,13 @@ class FormScreen extends StatelessWidget {
         ),
       ),*/
       ),
+      floatingActionButton: FlatButton.icon(
+        onPressed: () {
+          Navigator.pushNamed(context, '/map');
+        },
+        icon: Icon(Icons.edit_location),
+        label: Text('Map'),
+      ),
     );
   }
 
