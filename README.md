@@ -68,7 +68,7 @@ Another thing we learnt was how to support our teammates, morally and technicall
 
 Lastly, we gained ourselves got to know a lot about carbon footprint and what we can do to reduce it.
 
-## What's next for the Conscious App
+## What's next for CarbonDex
 
 We hope to continue developing CarbonDex to become a better platform that supports cleaner and more uniform graphics.
 
