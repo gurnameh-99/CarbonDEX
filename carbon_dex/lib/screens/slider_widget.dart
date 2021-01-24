@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'custom_slider_thumb_circle.dart';
 import 'form_data.dart';
+import 'package:flutter/cupertino.dart';
 
 var formData = FormData.getData;
 
@@ -118,7 +119,7 @@ class _SliderWidgetState extends State<SliderWidget> {
                 color: Colors.white,
               ),
             ),
-          ],
+         submitRatingButton ],
         ),
           //Row(children: <Widget>[submitRatingButton,]),
 
@@ -135,10 +136,12 @@ class _SliderWidgetState extends State<SliderWidget> {
     print(this.widget.val);
   }
   Widget get submitRatingButton {
-    return RaisedButton(
+    return IconButton(
       onPressed: updateRating,
-      child: Text('Submit'),
-      color: Colors.indigoAccent,
+      icon: Icon(CupertinoIcons.checkmark_alt_circle_fill),
+      iconSize: 30,
+      //child: Text('Submit'),
+      color: Colors.deepPurple,
     );
   }
 }

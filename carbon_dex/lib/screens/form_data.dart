@@ -8,7 +8,7 @@ class FormData{
       'title': "Vehicle's fuel consumption",
       'subtitle': 'in L/100km',
       'icon': CupertinoIcons.flame_fill,
-      'iconColor': Colors.blueAccent,
+      'iconColor': Colors.deepPurple,
       'min':2,
       'max':15,
     },/*

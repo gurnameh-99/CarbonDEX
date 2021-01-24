@@ -33,8 +33,30 @@ class FormScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
         Container(
-        child: Text(
-          "something comes here",)
+          alignment: Alignment.center,
+        child: Container(
+        child: Column(children:<Widget>[
+          IconButton(
+          icon: Icon(CupertinoIcons.dial_fill),
+          iconSize: 60,
+          color: Colors.deepPurple,
+        ),
+          SizedBox(height: 10,),
+        RichText(text: TextSpan(
+          text: 'Fuel Consumption',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40, fontFamily: 'Sifonn', color: Colors.black),
+          children: <TextSpan>[
+            TextSpan(text: '\n\nFuel consumption is the amount of fuel used per unit distance.\n\nThe ', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, fontFamily: 'Ariel')),
+            TextSpan(text: 'lower', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, fontFamily: 'Ariel')),
+            TextSpan(text: ' the value, the ',style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, fontFamily: 'Ariel')),
+            TextSpan(text: 'more', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, fontFamily: 'Ariel')),
+            TextSpan(text: ' economic a vehicle is.', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, fontFamily: 'Ariel')),
+            TextSpan(text: '\n\nENTER YOUR VEHICLE\'S FUEL CONSUMPTION BELOW:', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, fontFamily: 'Sifonn')),
+          ],
+        ),),
+          SizedBox(height: 10,),
+        ])
+        ),
         ),
             Expanded(
               child: ListView.builder(
@@ -43,7 +65,7 @@ class FormScreen extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Container(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-                      height: 200,
+                      height: 150,
                       width: double.maxFinite,
                       child: Card(
                         elevation: 5,
