@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(Duration(seconds: 5), () {
       print('Time Out');
-      Navigator.pushNamed(context, '/simpleform');
+      Navigator.pushNamed(context, '/home');
     });
   }
 

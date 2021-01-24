@@ -353,6 +353,13 @@ class FormScreen1 extends StatelessWidget {
                       }
                       _formKey.currentState.save();
 
+                      int elecem;
+                      int natem;
+                      int fuelem;
+                      int gasem;
+                      int carm;
+                      int busem;
+                      int airem;
                       //This place is for CO2 emission calculation
                       print(_country);
                       print(_heatingfuel);
