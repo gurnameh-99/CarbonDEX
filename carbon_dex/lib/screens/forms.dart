@@ -34,7 +34,7 @@ class FormScreen extends StatelessWidget {
           children: <Widget>[
         Container(
         child: Text(
-          "${wid.val}",)
+          "something comes here",)
         ),
             Expanded(
               child: ListView.builder(
