@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import './screens/splashscreen.dart';
 import './screens/forms.dart';
 import './screens/maps.dart';
+import './screens/result.dart';
 
 var routes = <String, WidgetBuilder>{
   "/": (BuildContext context) => SplashScreen(),
@@ -11,6 +12,7 @@ var routes = <String, WidgetBuilder>{
   "/form": (BuildContext context) => FormScreen(),
   "/simpleform": (BuildContext context) => FormScreen1(),
   "/map": (BuildContext context) => Loading(),
+  "/result": (BuildContext context) => Result(),
 };
 
 void main() => runApp(
