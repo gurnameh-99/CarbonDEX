@@ -35,7 +35,7 @@ class FormScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return Container(
                     padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-                    height: 220,
+                    height: 150,
                     width: double.maxFinite,
                     child: Card(
                       elevation: 5,
@@ -66,15 +66,10 @@ class FormScreen extends StatelessWidget {
                                               SizedBox(
                                                 height: 10,
                                               ),
-                                             // cryptoChange(cryptoData[index]),
-                                              SizedBox(
-                                                width: 10,
-                                              ),
-                                             // changeIcon(cryptoData[index]),
-                                              SizedBox(
-                                                width: 20,
-                                              )
                                             ],
+                                          ),
+                                          SizedBox(
+                                            height: 20,
                                           ),
                                           Row(
                                             children: <Widget>[
@@ -201,7 +196,7 @@ class FormScreen extends StatelessWidget {
           child: Icon(
             data['icon'],
             color: data['iconColor'],
-            size: 80,
+            size: 40,
           )),
     );
   }
@@ -212,19 +207,18 @@ class FormScreen extends StatelessWidget {
         text: TextSpan(
           text: '${data['title']}',//'Enter your car\'s fuel\nconsumption',
           style: TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
+              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 10),
           children: <TextSpan>[
             TextSpan(
                 text: '\n${data['subtitle']}',//'\n\nin L/100 km.',
                 style: TextStyle(
                     color: Colors.grey,
-                    fontSize: 15,
+                    fontSize: 5,
                     fontWeight: FontWeight.bold)),
           ],
         ),
       ),
     );
   }
-
 
 }
