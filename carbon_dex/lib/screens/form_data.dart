@@ -9,12 +9,16 @@ class FormData{
       'subtitle': 'in L/100km',
       'icon': CupertinoIcons.flame_fill,
       'iconColor': Colors.blueAccent,
-    },
+      'min':2,
+      'max':15,
+    },/*
     {
       'title': "hello",
       'subtitle': 'bye',
       'icon': CupertinoIcons.flame_fill,
       'iconColor': Colors.blueAccent,
-    },
+      'min':0,
+      'max':100,
+    },*/
   ];
 }

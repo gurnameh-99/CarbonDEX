@@ -23,19 +23,22 @@ class IntroScreen extends StatelessWidget {
         children: <Widget>[
           Column(
             children: <Widget>[
-              Text('Hello', style: TextStyle(
-              )),
+              Text('Hello', style: TextStyle()),
             ],
           ),
           Column(
             children: <Widget>[
               FlatButton(
+                onPressed: () {
+                  print('Going to form');
+                  Navigator.pushNamed(context, '/form');
+                },
                 color: Colors.blue,
                 textColor: Colors.white,
                 disabledColor: Colors.grey,
                 disabledTextColor: Colors.black,
                 padding: EdgeInsets.all(8.0),
-                splashColor: Colors.blueAccent, 
+                splashColor: Colors.blueAccent,
                 child: Text(
                   'GET STARTED',
                   style: TextStyle(

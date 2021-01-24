@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a9f91ca-ef56-44cf-af98-78a9175c190e" name="Default Changelist" comment="" />
+    <list default="true" id="0a9f91ca-ef56-44cf-af98-78a9175c190e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carbon_dex/lib/screens/forms.dart" beforeDir="false" afterPath="$PROJECT_DIR$/carbon_dex/lib/screens/forms.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,14 +40,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="D:/androidSDK/flutter" />
+    <property name="last_opened_file_path" value="D:/androidSDK" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="dart.settings" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
@@ -83,34 +87,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1611389840239" />
-    <state x="208" y="108" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611390574781">
+    <state x="208" y="108" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611467533174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="208" y="108" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1611390574781" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1611390652379">
+    <state x="208" y="108" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1611467533174" />
+    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1611467514147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611390652379" />
-    <state width="1491" height="343" key="GridCell.Tab.0.bottom" timestamp="1611466279526">
+    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611467514147" />
+    <state width="1491" height="279" key="GridCell.Tab.0.bottom" timestamp="1611476622274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="343" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611466279526" />
-    <state width="1491" height="343" key="GridCell.Tab.0.center" timestamp="1611466279526">
+    <state width="1491" height="279" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611476622274" />
+    <state width="1491" height="279" key="GridCell.Tab.0.center" timestamp="1611476622274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="343" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611466279526" />
-    <state width="1491" height="343" key="GridCell.Tab.0.left" timestamp="1611466279526">
+    <state width="1491" height="279" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611476622274" />
+    <state width="1491" height="279" key="GridCell.Tab.0.left" timestamp="1611476622274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="343" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611466279526" />
-    <state width="1491" height="343" key="GridCell.Tab.0.right" timestamp="1611466279526">
+    <state width="1491" height="279" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611476622274" />
+    <state width="1491" height="279" key="GridCell.Tab.0.right" timestamp="1611476622274">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="343" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611466279526" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1611390514715">
+    <state width="1491" height="279" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611476622274" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1611467560083">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611390514715" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611467560083" />
     <state x="962" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611435142958">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
