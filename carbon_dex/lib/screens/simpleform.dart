@@ -79,7 +79,8 @@ class FormScreen1 extends StatelessWidget {
 
   Widget _buildelectricityfuel() {
     return TextFormField(
-      decoration: InputDecoration(labelText: 'Electricity Fuel Consumption'),
+      decoration: InputDecoration(
+          labelText: 'Electricity Fuel Consumption(Avg Bill per Month)'),
       validator: (String value) {
         if (value.isEmpty) {
           return 'Electricity Fuel Consumption is Required';
@@ -135,10 +136,11 @@ class FormScreen1 extends StatelessWidget {
 
   Widget _buildcarfuelconsumption() {
     return TextFormField(
-      decoration: InputDecoration(labelText: 'Car Fuel Consumption'),
+      decoration:
+          InputDecoration(labelText: 'Car Fuel Consumption(Amount per Month)'),
       validator: (String value) {
         if (value.isEmpty) {
-          return 'Country is Required';
+          return 'Car Fuel Consumption is Required';
         }
       },
       onSaved: (String value) {
@@ -305,7 +307,7 @@ class FormScreen1 extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 16,
-                          fontFamily: 'Sifonn'),
+                          fontFamily: 'QuicksandM'),
                     ),
                   ),
                   Container(
@@ -325,7 +327,6 @@ class FormScreen1 extends StatelessWidget {
                   _builddistancetravelledincar(),
                   _builddistancetravelledinbus(),
                   _buildhoursspentinsplace(),
-                  _buildpercentlowcarbonelectricity(),
 
                   // _buildnummeatmeal(),
                   // _buildeddpigmeal(),
@@ -352,31 +353,41 @@ class FormScreen1 extends StatelessWidget {
                         return;
                       }
                       _formKey.currentState.save();
-
-                      int elecem;
-                      int natem;
-                      int fuelem;
-                      int gasem;
-                      int carm;
-                      int busem;
-                      int airem;
+                      print(_formKey.currentState);
+                      var electricitybill = double.parse(_electricitybill);
+                      var carfuel = double.parse(_carfuelconsumption);
+                      var heatfuel = double.parse(_heatingfuel);
+                      var carmiles = double.parse(_distancetravelledincar);
+                      var busmiles = double.parse(_distancetravelledinbus);
+                      var airmiles = double.parse(_hoursspentinsplace);
+                      double elecem = (electricitybill / 0.20) * 1.37 * 12.00;
+                      double natem = (carfuel / 14.14) * 120.061 * 12.00;
+                      double fuelem = (heatfuel / 2.88) * 22.37 * 12.00;
+                      double carm = (carmiles * 19.4);
+                      double busem = (busmiles * 52) / 0.9 * 19.4 * 1.02;
+                      double airem = (airmiles * 52) / 0.9 * 19.4 * 1.02;
+                      // double total =
+                      //     elecem + natem + fuelem + carm + busem + airem;
+                      print("Total Consumption Stands at ");
+                      // print(total);
+                      print("tons CO2e/year");
                       //This place is for CO2 emission calculation
-                      print(_country);
-                      print(_heatingfuel);
-                      print(_electricitybill);
-                      print(_percentlowcarbonelectricity);
-                      print(_hoursspentinsplace);
-                      print(_distancetravelledincar);
-                      print(_carfuelconsumption);
-                      print(_distancetravelledinbus);
-                      print(_nummeatmeal);
-                      print(_eddpigmeal);
-                      print(_cheeseportion);
-                      print(_snacknumbers);
-                      print(_weight);
-                      print(_moneymaterialgoods);
-                      print(_moneyinbank);
-                      print(_waterconsumption);
+                      // print(_country);
+                      // print(_heatingfuel);
+                      // print(_electricitybill);
+                      // print(_percentlowcarbonelectricity);
+                      // print(_hoursspentinsplace);
+                      // print(_distancetravelledincar);
+                      // print(_carfuelconsumption);
+                      // print(_distancetravelledinbus);
+                      // print(_nummeatmeal);
+                      // print(_eddpigmeal);
+                      // print(_cheeseportion);
+                      // print(_snacknumbers);
+                      // print(_weight);
+                      // print(_moneymaterialgoods);
+                      // print(_moneyinbank);
+                      // print(_waterconsumption);
                     },
                   ),
                 ],
