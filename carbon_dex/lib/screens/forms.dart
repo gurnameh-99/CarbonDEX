@@ -110,26 +110,7 @@ class FormScreen extends StatelessWidget {
       ),
     );
   }
-  Widget cryptoChange() {
-    return Align(
-      alignment: Alignment.topRight,
-      child: RichText(
-        text: TextSpan(
-          text: '+3.67%',
-          style: TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.green, fontSize: 20),
-          children: <TextSpan>[
-            TextSpan(
-                text: '\n+202.835',
-                style: TextStyle(
-                    color: Colors.green,
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold)),
-          ],
-        ),
-      ),
-    );
-  }
+
   Widget changeIcon() {
     return Align(
         alignment: Alignment.topRight,
@@ -138,40 +119,6 @@ class FormScreen extends StatelessWidget {
           color: Colors.green,
           size: 30,
         ));
-  }
-  Widget sliderAmount(){
-
-  }
-  Widget cryptoAmount() {
-    return Align(
-      alignment: Alignment.centerLeft,
-      child: Padding(
-        padding: const EdgeInsets.only(left: 20.0),
-        child: Row(
-          children: <Widget>[
-            RichText(
-              textAlign: TextAlign.left,
-              text: TextSpan(
-                text: '\n\$12.279',
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 35,
-                ),
-                children: <TextSpan>[
-                  TextSpan(
-                      text: '\n0.1349',
-                      style: TextStyle(
-                          color: Colors.grey,
-                          fontStyle: FontStyle.italic,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold)),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
   }
 
 }

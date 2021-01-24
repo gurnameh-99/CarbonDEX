@@ -9,8 +9,8 @@ class SliderWidget extends StatefulWidget {
 
   SliderWidget(
       {this.sliderHeight = 48,
-        this.max = 10,
-        this.min = 0,
+        this.max = 15,
+        this.min = 2,
         this.fullWidth = false});
 
   @override
