@@ -37,19 +37,23 @@ class _SplashScreenState extends State<SplashScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      CircleAvatar(
-                          backgroundColor: Colors.white,
-                          radius: 50.0,
-                          child: Image.asset('1.png')),
-                      Padding(
-                        padding: EdgeInsets.only(top: 10.0),
+                      Container(
+                        height: 120.0,
+                        width: 120.0,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage('assets/foot.png'),
+                            fit: BoxFit.fill,
+                          ),
+                          shape: BoxShape.circle,
+                        ),
                       ),
                       Text(
                         "CarbonDex",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 24.0,
-                            fontFamily: 'Dosis',
+                            fontFamily: 'Sifonn',
                             fontWeight: FontWeight.bold),
                       ),
                     ],

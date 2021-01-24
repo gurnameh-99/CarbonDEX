@@ -12,7 +12,7 @@ class IntroScreen extends StatelessWidget {
             fontWeight: FontWeight.w300,
             letterSpacing: 2.0,
             color: Colors.amber[100],
-            fontFamily: 'Rock',
+            fontFamily: 'Sifonn',
           ),
         ),
         centerTitle: true,
