@@ -353,23 +353,23 @@ class FormScreen1 extends StatelessWidget {
                         return;
                       }
                       _formKey.currentState.save();
-                      print(_formKey.currentState);
-                      var electricitybill = double.parse(_electricitybill);
-                      var carfuel = double.parse(_carfuelconsumption);
-                      var heatfuel = double.parse(_heatingfuel);
-                      var carmiles = double.parse(_distancetravelledincar);
-                      var busmiles = double.parse(_distancetravelledinbus);
-                      var airmiles = double.parse(_hoursspentinsplace);
+
+                      double electricitybill = double.parse(_electricitybill);
+                      double carfuel = double.parse(_carfuelconsumption);
+                      double heatfuel = double.parse(_heatingfuel);
+                      double carmiles = double.parse(_distancetravelledincar);
+                      double busmiles = double.parse(_distancetravelledinbus);
+                      double airmiles = double.parse(_hoursspentinsplace);
                       double elecem = (electricitybill / 0.20) * 1.37 * 12.00;
                       double natem = (carfuel / 14.14) * 120.061 * 12.00;
                       double fuelem = (heatfuel / 2.88) * 22.37 * 12.00;
                       double carm = (carmiles * 19.4);
                       double busem = (busmiles * 52) / 0.9 * 19.4 * 1.02;
                       double airem = (airmiles * 52) / 0.9 * 19.4 * 1.02;
-                      // double total =
-                      //     elecem + natem + fuelem + carm + busem + airem;
+                      double total =
+                          elecem + natem + fuelem + carm + busem + airem;
                       print("Total Consumption Stands at ");
-                      // print(total);
+                      print(total);
                       print("tons CO2e/year");
                       //This place is for CO2 emission calculation
                       // print(_country);
@@ -388,6 +388,8 @@ class FormScreen1 extends StatelessWidget {
                       // print(_moneymaterialgoods);
                       // print(_moneyinbank);
                       // print(_waterconsumption);
+
+                      Navigator.pushNamed(context, ' /result');
                     },
                   ),
                 ],

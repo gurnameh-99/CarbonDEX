@@ -1,6 +1,6 @@
 import 'dart:io';
-import 'package:carbon_dex/screens/data/data.dart';
-import 'package:carbon_dex/screens/data/main.dart';
+import './data/data.dart';
+import './data/main.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -120,7 +120,7 @@ class _HomeState extends State<Home> {
             : InkWell(
                 onTap: () {
                   print("Get Started Now");
-                  Navigator.pushNamed(context, '/simpleform');
+                  Navigator.pushNamed(context, '/form');
                 },
                 child: Container(
                   height: Platform.isIOS ? 70 : 60,

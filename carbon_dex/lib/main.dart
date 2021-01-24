@@ -1,5 +1,5 @@
-import 'package:carbon_dex/screens/intro.dart';
-import 'package:carbon_dex/screens/simpleform.dart';
+import './screens/intro.dart';
+import './screens/simpleform.dart';
 import 'package:flutter/material.dart';
 import './screens/splashscreen.dart';
 import './screens/forms.dart';

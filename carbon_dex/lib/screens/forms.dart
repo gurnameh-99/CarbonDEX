@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'slider_widget.dart';
-import 'package:carbon_dex/screens/slider_widget.dart';
 
 import 'form_data.dart';
 
@@ -32,32 +31,73 @@ class FormScreen extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-        Container(
-          alignment: Alignment.center,
-        child: Container(
-        child: Column(children:<Widget>[
-          IconButton(
-          icon: Icon(CupertinoIcons.dial_fill),
-          iconSize: 60,
-          color: Colors.deepPurple,
-        ),
-          SizedBox(height: 10,),
-        RichText(text: TextSpan(
-          text: 'Fuel Consumption',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40, fontFamily: 'Sifonn', color: Colors.black),
-          children: <TextSpan>[
-            TextSpan(text: '\n\nFuel consumption is the amount of fuel used per unit distance.\n\nThe ', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, fontFamily: 'Ariel')),
-            TextSpan(text: 'lower', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, fontFamily: 'Ariel')),
-            TextSpan(text: ' the value, the ',style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, fontFamily: 'Ariel')),
-            TextSpan(text: 'more', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, fontFamily: 'Ariel')),
-            TextSpan(text: ' economic a vehicle is.', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, fontFamily: 'Ariel')),
-            TextSpan(text: '\n\nENTER YOUR VEHICLE\'S FUEL CONSUMPTION BELOW:', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 20, fontFamily: 'Sifonn')),
-          ],
-        ),),
-          SizedBox(height: 10,),
-        ])
-        ),
-        ),
+            Container(
+              alignment: Alignment.center,
+              child: Container(
+                  child: Column(children: <Widget>[
+                IconButton(
+                  icon: Icon(CupertinoIcons.dial_fill),
+                  iconSize: 60,
+                  color: Colors.deepPurple,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                RichText(
+                  text: TextSpan(
+                    text: 'Fuel Consumption',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 40,
+                        fontFamily: 'Sifonn',
+                        color: Colors.black),
+                    children: <TextSpan>[
+                      TextSpan(
+                          text:
+                              '\n\nFuel consumption is the amount of fuel used per unit distance.\n\nThe ',
+                          style: TextStyle(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 20,
+                              fontFamily: 'Ariel')),
+                      TextSpan(
+                          text: 'lower',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                              fontFamily: 'Ariel')),
+                      TextSpan(
+                          text: ' the value, the ',
+                          style: TextStyle(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 20,
+                              fontFamily: 'Ariel')),
+                      TextSpan(
+                          text: 'more',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                              fontFamily: 'Ariel')),
+                      TextSpan(
+                          text: ' economic a vehicle is.',
+                          style: TextStyle(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 20,
+                              fontFamily: 'Ariel')),
+                      TextSpan(
+                          text:
+                              '\n\nENTER YOUR VEHICLE\'S FUEL CONSUMPTION BELOW:',
+                          style: TextStyle(
+                              fontWeight: FontWeight.normal,
+                              fontSize: 20,
+                              fontFamily: 'Sifonn')),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+              ])),
+            ),
             Expanded(
               child: ListView.builder(
 // scrollDirection: Axis.horizontal,
@@ -73,7 +113,8 @@ class FormScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                             border: Border(
                               top: BorderSide(
-                                  width: 2.0, color: formData[index]['iconColor']),
+                                  width: 2.0,
+                                  color: formData[index]['iconColor']),
                             ),
                             color: Colors.white,
                           ),
@@ -85,7 +126,8 @@ class FormScreen extends StatelessWidget {
                                 child: Stack(
                                   children: <Widget>[
                                     Padding(
-                                        padding: const EdgeInsets.only(left: 10, top: 5),
+                                        padding: const EdgeInsets.only(
+                                            left: 10, top: 5),
                                         child: Column(
                                           children: <Widget>[
                                             Row(
@@ -106,14 +148,12 @@ class FormScreen extends StatelessWidget {
                                                 wid,
                                               ],
                                             ),
-
                                           ],
                                         ))
                                   ],
                                 ),
                               )
                             ]),
-
                           ),
                         ),
                       ),
@@ -238,17 +278,21 @@ class FormScreen extends StatelessWidget {
           )),
     );
   }
+
   Widget cardTitle(data) {
     return Align(
       alignment: Alignment.centerLeft,
       child: RichText(
         text: TextSpan(
-          text: '${data['title']}',//'Enter your car\'s fuel\nconsumption',
+          text: '${data['title']}', //'Enter your car\'s fuel\nconsumption',
           style: TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 18, fontFamily: 'Sifonn'),
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontSize: 18,
+              fontFamily: 'Sifonn'),
           children: <TextSpan>[
             TextSpan(
-                text: '\n${data['subtitle']}',//'\n\nin L/100 km.',
+                text: '\n${data['subtitle']}', //'\n\nin L/100 km.',
                 style: TextStyle(
                     color: Colors.grey,
                     fontSize: 15,
@@ -259,6 +303,4 @@ class FormScreen extends StatelessWidget {
       ),
     );
   }
-
-
 }
