@@ -31,6 +31,34 @@ class IntroScreen extends StatelessWidget {
               FlatButton(
                 onPressed: () {
                   print('Going to form');
+                  Navigator.pushNamed(context, '/simpleform');
+                },
+                color: Colors.blue,
+                textColor: Colors.white,
+                disabledColor: Colors.grey,
+                disabledTextColor: Colors.black,
+                padding: EdgeInsets.all(8.0),
+                splashColor: Colors.blueAccent,
+                child: Text(
+                  'Questionaire',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    // fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontFamily: 'Sifonn',
+                  ),
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(1000),
+                ),
+              ),
+            ],
+          ),
+          Column(
+            children: <Widget>[
+              FlatButton(
+                onPressed: () {
+                  print('Going to form');
                   Navigator.pushNamed(context, '/form');
                 },
                 color: Colors.blue,
