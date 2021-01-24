@@ -34,7 +34,9 @@ dev_dependencies:
     sdk: flutter
   http: ^0.12.2
   geolocator: ^6.1.14
-  google_maps_flutter: ^1.1.1
+  geocoder: ^0.2.1
+  google_maps_flutter: ^0.5.32
+  search_map_place: ^0.3.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
