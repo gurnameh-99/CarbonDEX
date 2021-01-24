@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         width: 120.0,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image: AssetImage('assets/foot.png'),
+                            image: AssetImage('assets/images/foot.png'),
                             fit: BoxFit.fill,
                           ),
                           shape: BoxShape.circle,

@@ -11,12 +11,10 @@ class IntroScreen extends StatelessWidget {
             fontSize: 26.0,
             fontWeight: FontWeight.w300,
             letterSpacing: 2.0,
-            color: Colors.amber[100],
             fontFamily: 'Sifonn',
           ),
         ),
         centerTitle: true,
-        // backgroundColor: Colors.lightGreen[800],
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
