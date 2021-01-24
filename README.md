@@ -1,4 +1,6 @@
-# carbon_dex
+# CarbonDex
+### Gain deeper insights into YOUR Carbon Footprint.
+### Official Submission for BoilerMake 2021
 
 A new Flutter application.
 
