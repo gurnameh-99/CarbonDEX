@@ -389,11 +389,7 @@ class FormScreen1 extends StatelessWidget {
                       // print(_moneyinbank);
                       // print(_waterconsumption);
 
-<<<<<<< HEAD
-                      Navigator.pushNamed(context, ' /result');
-=======
-                      //Navigator.pushNamed(context,' /result')
->>>>>>> main
+                      Navigator.pushNamed(context, '/result');
                     },
                   ),
                 ],
