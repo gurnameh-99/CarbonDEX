@@ -216,14 +216,15 @@ class FormScreen extends StatelessWidget {
         text: TextSpan(
           text: '${data['title']}',//'Enter your car\'s fuel\nconsumption',
           style: TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 10),
+              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 18, fontFamily: 'Sifonn'),
           children: <TextSpan>[
             TextSpan(
                 text: '\n${data['subtitle']}',//'\n\nin L/100 km.',
                 style: TextStyle(
                     color: Colors.grey,
-                    fontSize: 5,
-                    fontWeight: FontWeight.bold)),
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Sifonn')),
           ],
         ),
       ),

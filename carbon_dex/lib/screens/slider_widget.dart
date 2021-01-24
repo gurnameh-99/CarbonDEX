@@ -37,6 +37,7 @@ class _SliderWidgetState extends State<SliderWidget> {
 
 
     return Container(
+
       width: this.widget.fullWidth
           ? double.infinity
           : (this.widget.sliderHeight) * 5.5,
@@ -47,8 +48,8 @@ class _SliderWidgetState extends State<SliderWidget> {
         ),
         gradient: new LinearGradient(
             colors: [
-              const Color(0xFF00c6ff),
-              const Color(0xFF0072ff),
+              const Color(0xFFb4f500),
+              const Color(0xFFff5050),
             ],
             begin: const FractionalOffset(0.0, 0.0),
             end: const FractionalOffset(1.0, 1.00),
@@ -58,7 +59,9 @@ class _SliderWidgetState extends State<SliderWidget> {
       child: Padding(
         padding: EdgeInsets.fromLTRB(this.widget.sliderHeight * paddingFactor,
             2, this.widget.sliderHeight * paddingFactor, 2),
-        child: Row(
+        child: Stack(
+        children: <Widget>[
+          Row(
           children: <Widget>[
             Text(
               '${this.widget.min}',
@@ -115,11 +118,16 @@ class _SliderWidgetState extends State<SliderWidget> {
                 color: Colors.white,
               ),
             ),
-            submitRatingButton,
           ],
+        ),
+          //Row(children: <Widget>[submitRatingButton,]),
+
+    ],
         ),
       ),
     );
+    submitRatingButton;
+
 
   }
   void updateRating() {
