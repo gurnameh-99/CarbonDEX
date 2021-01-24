@@ -148,6 +148,13 @@ class _LoadingState extends State<Loading> {
           ),
         ],
       ),
+      floatingActionButton: FlatButton.icon(
+        onPressed: () {
+          Navigator.pushNamed(context, '/resultMap');
+        },
+        icon: Icon(Icons.edit),
+        label: Text('Map'),
+      ),
     );
   }
 

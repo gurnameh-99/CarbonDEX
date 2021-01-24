@@ -1,3 +1,5 @@
+import 'package:CarbonDex/screens/resultMap.dart';
+
 import './screens/intro.dart';
 import './screens/simpleform.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +15,7 @@ var routes = <String, WidgetBuilder>{
   "/simpleform": (BuildContext context) => FormScreen1(),
   "/map": (BuildContext context) => Loading(),
   "/result": (BuildContext context) => Result(),
+  "/resultMap": (BuildContext context) => ResultMap(),
 };
 
 void main() => runApp(
