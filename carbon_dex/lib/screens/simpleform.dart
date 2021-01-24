@@ -39,6 +39,13 @@ class FormScreen1 extends StatelessWidget {
   // int _moneyinbank;
   // int _waterconsumption;
   // int _internetdataused;
+  int elecem;
+  int natem;
+  int fuelem;
+  int gasem;
+  int carm;
+  int busem;
+  int airem;
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
@@ -292,7 +299,15 @@ class FormScreen1 extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  _buildcountry(),
+                  Container(
+                    child: Text(
+                      'submit',
+                      style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 16,
+                          fontFamily: 'Sifonn'),
+                    ),
+                  ),
                   _buildheatingfuel(),
                   _buildelectricityfuel(),
                   _buildpercentlowcarbonelectricity(),
