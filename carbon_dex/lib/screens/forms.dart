@@ -26,7 +26,44 @@ class FormScreen extends StatelessWidget {
         padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
         height: 220,
         width: double.maxFinite,
-        child: Card(
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            new Card(child: Padding(
+              padding: EdgeInsets.all(7),
+              child: Stack(
+                  children: <Widget>[
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: Stack(
+                        children: <Widget>[
+                          Padding(
+                              padding: const EdgeInsets.only(left: 10, top: 5),
+                              child: Column(
+                                children: <Widget>[
+                                  Row(
+                                    children: <Widget>[
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 15.0),
+                                        child: Align(
+                                            alignment: Alignment.centerLeft,
+                                            child: Icon(
+                                              CupertinoIcons.flame_fill,
+                                              color: Colors.amber,
+                                              size: 40,
+                                            )),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ))
+                        ],
+                      ),
+                    )
+                  ]),
+            ),),
+            Card(
           elevation: 5,
           child: Padding(
             padding: EdgeInsets.all(7),
@@ -74,6 +111,7 @@ class FormScreen extends StatelessWidget {
                   )
                 ]),
           ),
+        ),]
         ),
       ),
     );
