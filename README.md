@@ -45,8 +45,8 @@ _(( How we built it? We built it with almost zero experience! :P))_
 CarbonDex is a mobile application built using Flutter and Dart whose main job is to calculate a person's carbon footprint based on their input.
 
 We provide the various functionalities listed below:
-- **Carbon Footprint Calculator**: The user has to answer a simple questionnaire which provides the application with data in order to calculate how much carbon footprint a person leaves behind.
--**Carbon Footprint in a Journey**: The application simply asks the user to input their vehicle's Fuel Consumption, which it then utilizes to provide the user with _real-time_ insights on the carbon footprint left behind in during a journey, using the Google Maps API.
+- **Carbon Footprint Calculator**: The user has to answer a simple questionnaire which provides the application with data in order to calculate how much carbon footprint a person leaves behind.<br>
+-**Carbon Footprint in a Journey**: The application simply asks the user to input their vehicle's Fuel Consumption, which it then utilizes to provide the user with _real-time_ insights on the carbon footprint left behind in during a journey, using the Google Maps API.<br>
 -**Management and Getting to Know More**: The application can also be used to gain information on how the you can manage your carbon footprint. It also provides the users with additional information and resources that they can reference to gain further awareness regarding the topic.
 
 
