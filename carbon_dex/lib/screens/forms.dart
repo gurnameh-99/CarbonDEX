@@ -2,15 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:crypto_font_icons/crypto_font_icons.dart';
 import 'package:typicons_flutter/typicons.dart';
+import 'slider_widget.dart';
 
 int value = 6;
-
-class MySliderApp extends StatefulWidget {
-  MySliderApp({Key key}) : super(key: key);
-
-  @override
-  _MySliderAppState createState() => _MySliderAppState();
-}
 
 class FormScreen extends StatelessWidget {
   @override
@@ -70,7 +64,7 @@ class FormScreen extends StatelessWidget {
                                   ],
                                 ),
                                 Row(
-                                  children: <Widget> [sliderAmount()],//[cryptoAmount()],
+                                  children: <Widget> [SliderWidget()],//[cryptoAmount()],
                                 )
                               ],
                             ))
