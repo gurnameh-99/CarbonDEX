@@ -289,8 +289,8 @@ class FormScreen1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Questionaire')),
+    return new Scaffold(
+      appBar: new AppBar(title: Text('Carbon Footprint Tracker')),
       body: Container(
         margin: EdgeInsets.all(24),
         child: Form(
@@ -301,32 +301,43 @@ class FormScreen1 extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     child: Text(
-                      'submit',
+                      'Carbon Footprint is the amount of greenhouse gases—primarily carbon dioxide—released into the atmosphere by a particular human activity. A carbon footprint can be a broad meaasure or be applied to the actions of an individual, a family, an event, an organization, or even an entire nation.',
                       style: TextStyle(
-                          color: Colors.blue,
+                          color: Colors.black,
                           fontSize: 16,
                           fontFamily: 'Sifonn'),
                     ),
                   ),
-                  _buildheatingfuel(),
+                  Container(
+                    child: (Row(
+                      children: <Widget>[
+                        Expanded(
+                          child: Column(
+                            children: <Widget>[Divider(color: Colors.black)],
+                          ),
+                        )
+                      ],
+                    )),
+                  ),
                   _buildelectricityfuel(),
-                  _buildpercentlowcarbonelectricity(),
-                  _buildhoursspentinsplace(),
                   _buildcarfuelconsumption(),
+                  _buildheatingfuel(),
                   _builddistancetravelledincar(),
-                  _buildcarfuelconsumption(),
                   _builddistancetravelledinbus(),
-                  _buildnummeatmeal(),
-                  _buildeddpigmeal(),
-                  _buildcheeseportion(),
-                  _buildsnacknumbers(),
-                  _buildsnacknumbers(),
-                  _buildweight(),
-                  _buildmoneymaterialgoods(),
-                  _buildmoneymaterialgoods(),
-                  _buildmoneyinbank(),
-                  _buildwaterconsumption(),
-                  _buildinternetdataused(),
+                  _buildhoursspentinsplace(),
+                  _buildpercentlowcarbonelectricity(),
+
+                  // _buildnummeatmeal(),
+                  // _buildeddpigmeal(),
+                  // _buildcheeseportion(),
+                  // _buildsnacknumbers(),
+                  // _buildsnacknumbers(),
+                  // _buildweight(),
+                  // _buildmoneymaterialgoods(),
+                  // _buildmoneymaterialgoods(),
+                  // _buildmoneyinbank(),
+                  // _buildwaterconsumption(),
+                  // _buildinternetdataused(),
                   SizedBox(height: 100),
                   RaisedButton(
                     child: Text(
@@ -341,6 +352,8 @@ class FormScreen1 extends StatelessWidget {
                         return;
                       }
                       _formKey.currentState.save();
+
+                      //This place is for CO2 emission calculation
                       print(_country);
                       print(_heatingfuel);
                       print(_electricitybill);
