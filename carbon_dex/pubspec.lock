@@ -220,13 +220,6 @@ packages:
     source: hosted
     version: "2.1.0-nullsafety.3"
 sdks:
-<<<<<<< Updated upstream
   dart: ">=2.12.0-0.0 <3.0.0"
   flutter: ">=1.22.0"
-<<<<<<< Updated upstream
-=======
-=======
-  dart: ">=2.10.0-110 <2.11.0"
-  flutter: ">=1.22.0 <2.0.0"
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+
